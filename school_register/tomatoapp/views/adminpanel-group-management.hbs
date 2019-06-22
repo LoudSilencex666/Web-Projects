@@ -1,0 +1,27 @@
+    <section class="group-list">
+        <div class="group-display-list">
+        {{#each groupName}}
+                <div class="group-result" id="group{{@index}}">{{@index}}: {{this}}</div>
+        {{/each}}
+    </div>
+    </section>
+
+    
+    <section class="group-add">
+        <form id="groupAdd">
+            <label class="group-add-label">Nazwa: <input type="text" name="name" class="name"/></label>
+            <div class="add-button-margin"></div>
+            <input class="custom-button" type="submit" value="Dodaj groupę"/>
+        </form>
+    </section>
+
+    <section class="group-edit">
+        <form id="groupEdit">
+            <label class="group-edit-label">ID: <input type="text" name="groupId" class="groupId" value="{{groupId.[0]}}" readonly/></label>
+            <label class="group-edit-label">Nazwa: <input type="text" name="name" class="name" value="{{groupName.[0]}}"/></label>
+            <div class="edit-button-margin"></div>
+            <input class="custom-button" type="submit" value="Zmień dane grupy" />
+            <div class="edit-button-margin"></div>
+            <div class="deleteUser">Usuń grupę</div>
+        </form>
+    </section>

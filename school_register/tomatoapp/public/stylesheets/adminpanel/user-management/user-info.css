@@ -1,0 +1,38 @@
+.user-info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.user-info > .title {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;   
+}
+
+.attendance {
+    width: 90%;
+    height: 35%;
+}
+
+.last-login-info {
+    width: 90%;
+    height: 10%;
+}
+
+.login-count {
+    width: 90%;
+    height: 10%;
+}
+
+.future-info {
+    width: 90%;
+    height: 10%;
+}

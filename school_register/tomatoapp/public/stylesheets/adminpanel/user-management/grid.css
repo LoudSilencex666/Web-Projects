@@ -1,0 +1,27 @@
+.user-list {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 8;
+    grid-row: 2 / 20;
+}
+
+.user-management-add {
+    width: 100%;
+    height: 100%;
+    grid-column: 8 / 16;
+    grid-row: 2 / 11;
+}
+
+.user-management-edit {
+    width: 100%;
+    height: 100%;
+    grid-column: 8 / 16;
+    grid-row: 11 / 20;
+}
+
+.user-info {
+    width: 100%;
+    height: 100%;
+    grid-column: 16 / 21;
+    grid-row: 2 / 20;
+}

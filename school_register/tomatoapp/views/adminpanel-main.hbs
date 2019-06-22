@@ -1,0 +1,45 @@
+    <section class="tiles">
+        <a class="a-tiles" href="/adminpanel/notes"><div class="option-tile"><div class="tile-text">OCENY</div></div></a>
+        <a class="a-tiles" href="/adminpanel/notes"><div class="option-tile"><div class="tile-text">cool option 1</div></div></a>
+        <a class="a-tiles" href="/adminpanel/news-management"><div class="option-tile"><div class="tile-text">AKTUALNOŚCI</div></div></a>
+        <a class="a-tiles" href="/adminpanel/subject-management"><div class="option-tile"><div class="tile-text">ZARZĄDZANIE PRZEDMIOTAMI</div></div></a>
+        <a class="a-tiles" href="/adminpanel/group-management"><div class="option-tile"><div class="tile-text">ZARZĄDZANIE GRUPAMI</div></div></a>
+        <a class="a-tiles" href="/adminpanel/user-management"><div class="option-tile"><div class="tile-text">ZARZĄDZANIE UŻYTKOWNIKAMI</div></div></a>
+    </section>
+    <section class="graph">
+        <canvas id="notes-graph">
+
+        </canvas>
+    </section>
+    <section class="events">
+        <div class="events-area">
+            <div class="text-center text-title">
+                {{#each newsTitle}}
+                    {{#if @first}} {{this}} {{/if}}
+                {{/each}}
+            </div>
+            <div class="text-area">
+                {{#each newsContent}}
+                    {{#if @first}} {{this}} {{/if}}
+                {{/each}}  
+            </div>
+            <div class="text-center text-date">
+                {{#each newsDate}}
+                    {{#if @first}} {{this}} {{/if}}
+                {{/each}}
+            </div>
+        </div>
+        <div class="events-controls">
+            <div class="text-center event-section">
+                Najnowsze informacje
+            </div>
+            {{#each newsTitle}}
+                <div class="text-center event-title" id="news{{@index}}">{{this}}</div>
+            {{/each}}
+        </div>
+    </section>
+
+    <section class="idk">
+        
+    </section>
+

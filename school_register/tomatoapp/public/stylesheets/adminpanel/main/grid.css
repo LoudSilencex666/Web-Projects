@@ -1,0 +1,29 @@
+.tiles {
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / 8;
+    grid-row: 4 / 13;
+}
+
+.graph {
+    width: 100%;
+    height: 100%;
+    grid-column: 9 / 20;
+    grid-row: 4 / 13;
+}
+
+.events {
+    width: 100%;
+    height: 100%;
+    grid-column: 9 / 20;
+    grid-row: 14 / 19; 
+}
+
+.idk {
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / 8;
+    grid-row: 14 / 19; 
+}
+
+

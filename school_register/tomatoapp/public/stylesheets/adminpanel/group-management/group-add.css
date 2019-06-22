@@ -1,0 +1,50 @@
+.group-add {
+    color: white;
+    border: 2px solid rgb(27,114,168);
+    width: 90%;
+    height: 75%;
+}
+
+
+.group-add > form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-add-label {
+    width: 75%;
+    height: 8%;
+    margin: 5px 0 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group-add-label > input {
+    background: rgba(22, 22, 22, 1);
+    border: 0;
+    width: 50%;
+    height: 90%;
+    color: white;
+    padding: 2px 8px 2px 8px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 0.875rem;
+}
+
+.group-add-label > input:focus {
+    outline-color: rgba(27, 114, 168, 1)
+}
+
+.add-button-margin {
+    width: 100%;
+    height: 10%;
+}
+
+.custom-button {
+    width: 30%;
+    height: 10%;
+}

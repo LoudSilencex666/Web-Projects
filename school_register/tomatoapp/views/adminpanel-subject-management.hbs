@@ -1,0 +1,27 @@
+    <section class="subject-list">
+        <div class="subject-display-list">
+        {{#each subjectName}}
+                <div class="subject-result" id="subject{{@index}}">{{@index}}: {{this}}</div>
+        {{/each}}
+    </div>
+    </section>
+
+    
+    <section class="subject-add">
+        <form id="subjectAdd">
+            <label class="subject-add-label">Nazwa: <input type="text" name="name" class="name"/></label>
+            <div class="add-button-margin"></div>
+            <input class="custom-button" type="submit" value="Dodaj przedmiot"/>
+        </form>
+    </section>
+
+    <section class="subject-edit">
+        <form id="subjectEdit">
+            <label class="subject-edit-label">ID: <input type="text" name="subjectId" class="subjectId" value="{{subjectId.[0]}}" readonly/></label>
+            <label class="subject-edit-label">Nazwa: <input type="text" name="name" class="name" value="{{subjectName.[0]}}"/></label>
+            <div class="edit-button-margin"></div>
+            <input class="custom-button" type="submit" value="Zmień dane użytkownika" />
+            <div class="edit-button-margin"></div>
+            <div class="deleteUser">Usuń użytkownika</div>
+        </form>
+    </section>

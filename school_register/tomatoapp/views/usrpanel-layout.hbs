@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/main.css' />
+  <link rel='stylesheet' href='/stylesheets/standard-layout/grid.css' />
+  <link rel='stylesheet' href='/stylesheets/userpanel/grid.css' />
+  <link rel='stylesheet' href='/stylesheets/standard-layout/header.css' />
+  <link rel='stylesheet' href='/stylesheets/standard-layout/footer.css' />
+  <link rel='stylesheet' href='/stylesheets/userpanel/indicators.css' />
+  <link rel='stylesheet' href='/stylesheets/userpanel/usrmenu.css' />
+
+  </head>
+  <body>
+  <main>
+    <header>
+      <div class="menu-wrapper">
+        <a href="/usrpanel" class="logo">
+        <div class="menu-font logo-image">
+        </div>
+        </a>
+        <div class="menu-font iluminati-level">
+          {{status}}
+        </div>
+        <div class="menu-font user-id">
+          <div class="name">
+            {{name}}
+          </div>
+          <div class="surname">
+            {{surname}}
+          </div>
+        </div>
+        <div class="menu-font last-login">
+          <div class="date">
+            {{lastLoginDate}}
+          </div>
+        </div>
+        <div class="menu-font random-option">
+          cool future option
+        </div>
+        <div class="menu-font random-option">
+          cool future option
+        </div>
+        <div class="menu-font random-option">
+          cool future option
+        </div>
+      </div>
+      <div class="menu-strap">
+
+      </div>
+    </header>
+
+    {{{body}}}
+
+    <footer>
+      <div class="footer-strap"></div>
+      <div class="footer-wrapper">
+        <div class="authors">cool authors</div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+  </script>
+</body>
+</html>

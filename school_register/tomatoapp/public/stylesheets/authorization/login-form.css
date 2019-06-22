@@ -1,0 +1,28 @@
+input {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+label {
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button > button {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: black;
+    color: white;
+    border-color: rgb(62, 163, 226);
+}
+
+.button > button:active {
+    background: black;
+}

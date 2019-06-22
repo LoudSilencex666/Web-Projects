@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/main.css' />
+  <link rel='stylesheet' href='/stylesheets/standard-layout/grid.css' />
+  <link rel='stylesheet' href='/stylesheets/standard-layout/header.css' />
+  <link rel='stylesheet' href='/stylesheets/standard-layout/footer.css' />
+  <link rel='stylesheet' href='/stylesheets/adminpanel/main/grid.css' />
+  <link rel='stylesheet' href='/stylesheets/adminpanel/main/mainbg.css' />
+  <link rel='stylesheet' href='/stylesheets/adminpanel/main/tiles.css' />
+  <link rel='stylesheet' href='/stylesheets/adminpanel/main/graph.css' />
+  <link rel='stylesheet' href='/stylesheets/adminpanel/main/events.css' />
+  <link rel='stylesheet' href='/stylesheets/adminpanel/main/idk.css' />
+
+  <link rel='stylesheet' href='/stylesheets/adminpanel/user-management/grid.css' />
+  <link rel='stylesheet' href='/stylesheets/adminpanel/user-management/user-list.css' />
+  <link rel='stylesheet' href='/stylesheets/adminpanel/user-management/user-info.css' />
+  <link rel='stylesheet' href='/stylesheets/adminpanel/user-management/user-management.css' />
+
+  <link rel='stylesheet' href='/stylesheets/adminpanel/group-management/grid.css' />
+  <link rel='stylesheet' href='/stylesheets/adminpanel/group-management/group-list.css' />
+  <link rel='stylesheet' href='/stylesheets/adminpanel/group-management/group-add.css' />
+  <link rel='stylesheet' href='/stylesheets/adminpanel/group-management/group-edit.css' />
+
+  <link rel='stylesheet' href='/stylesheets/standard-layout/media-1280/media-1280.css' />
+  
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jura:700" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="menu-wrapper">
+        <a href="/adminpanel" class="logo">
+          <div class="menu-font logo-image">
+          </div>
+        </a>
+        <div class="menu-font iluminati-level">
+          {{adminStatus}}
+        </div>
+        <div class="menu-font user-id">
+          <div class="name">
+            {{adminName}}
+          </div>
+          <div class="surname">
+            {{adminSurname}}
+          </div>
+        </div>
+        <div class="menu-font last-login">
+          <div class="date">
+            {{adminLastLoginDate}}
+          </div>
+        </div>
+        <div class="menu-font random-option">
+          cool future option
+        </div>
+        <div class="menu-font random-option">
+          cool future option
+        </div>
+        <div class="menu-font random-option">
+          cool future option
+        </div>
+      </div>
+      <div class="menu-strap">
+        <div class="straperino"></div>
+      </div>
+    </header>
+
+    {{{body}}}
+
+    <footer>
+      <div class="footer-strap">
+        <div class="straperino"></div>
+      </div>
+      <div class="footer-wrapper">
+        <div class="authors">Damian Giedrojć &amp; Mateusz Chodor</div>
+      </div>
+    </footer>
+  </main>
+
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="/javascripts/global/globalVars.js"></script>
+  <script type="text/javascript" src="/javascripts/utills/inputValuesReciever.js"></script>
+  <script type="text/javascript" src="/javascripts/utills/strapAnimation.js"></script>
+  <script type="text/javascript" src="/javascripts/canvas/Chart.bundle.min.js"></script>
+  <script type="text/javascript" src="/javascripts/adminpanel/dataEmitersMain.js"></script>
+  <script type="text/javascript" src="/javascripts/adminpanel/dataEmitersUserManagement.js"></script>
+  <script type="text/javascript" src="/javascripts/adminpanel/notesGraphCanvas.js"></script>
+</body>
+
+</html>

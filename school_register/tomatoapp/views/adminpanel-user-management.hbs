@@ -1,0 +1,68 @@
+<section class="user-list">
+    <div class="title">Lista Użytkowników</div>
+    <div class="user-group">
+        <div>Grupa użytkowników: </div>
+        <label for="userGroups">
+        </label>
+        <select id="userGroups">
+            {{#each groupName}}
+                <option>{{this}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="user-display-list">
+        {{#each usrId}}
+                <div data-login="{{login}}" data-number="{{number}}" class="user-result" id="user{{@index}}">{{number}}: {{name}}</div>
+        {{/each}}
+    </div>
+</section>
+
+<section class="user-management user-management-add">
+    <div class="title">Dodawanie Użytkownika</div>
+    <div class="add-menu">
+        <form id="addUser">
+            <label class="add-menu-label">Imię: <input type="text" name="first_name" class="name"/></label>
+            <label class="add-menu-label">Nazwisko: <input type="text" name="last_name" class="surname"/></label>
+            <label class="add-menu-label" for="group">Grupa/Klasa:</label>
+            <select id="group" class="group"> 
+                {{#each groupName}}
+                    <option>{{this}}</option>
+                {{/each}}
+            </select>
+            <label class="add-menu-label">Hasło: <input type="text" name="password" class="password"/></label>
+            <label class="add-menu-label">Status: <input type="text" name="status" class="status"/></label>
+            <label class="add-menu-label">Numer: <input type="number" name="number" class="number"/></label>
+            <div class="add-button-margin"></div>
+            <input class="custom-button" type="submit" value="Dodaj użytkownika"/>
+        </form>
+    </div>
+</section>
+
+<section class="user-management user-management-edit">
+    <div class="title">Edycja Użytkownika</div>
+    <div class="edit-menu">
+        <form id="editUser">
+            <label class="edit-menu-label">Login: <input type="text" name="login" class="login" value="{{usrLogin.[0]}}" readonly/></label>
+            <label class="edit-menu-label">Imię: <input type="text" name="first_name" class="name" value="{{usrName.[0]}}"/></label>
+            <label class="edit-menu-label">Nazwisko: <input type="text" name="last_name" class="surname" value="{{usrSurname.[0]}}"/></label>
+            <label class="edit-menu-label">Grupa/Klasa: <input type="text" name="group" class="group" value="{{usrGroup.[0]}}"/></label>
+            <label class="edit-menu-label">Hasło: <input type="text" name="password" class="password" value="{{usrPassword.[0]}}"/></label>
+            <label class="edit-menu-label">Status: <input type="text" name="status" class="status" value="{{usrStatus.[0]}}"/></label>
+            <label class="edit-menu-label">Numer: <input type="number" name="number" class="number" value="{{usrNumber.[0]}}"/></label>
+            <div class="edit-button-margin"></div>
+            <input class="custom-button" type="submit" value="Zmień dane użytkownika" />
+            <div class="edit-button-margin"></div>
+            <div class="deleteUser">Usuń użytkownika</div>
+        </form>
+    </div>
+</section>
+
+<section class="user-info">
+    <div class="title">Szczegóły o Użytkowniku:</div>
+    <div class="attendance">Procentowa frekwencja:</div>
+    <div class="last-login-info">Ostatnie logowanie:</div>
+    <div class="login-count">Ilość logowań dzień/miesiąc/rok:</div>
+    <div class="future-info">cool future info:</div>
+    <div class="future-info">cool future info:</div>
+    <div class="future-info">cool future info:</div>
+</section>
