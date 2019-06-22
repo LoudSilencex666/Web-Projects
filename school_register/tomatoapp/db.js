@@ -2,19 +2,21 @@ const mysql = require('mysql');
 
 var pool  = null;
 exports.connect = function() {
+
+  // there should go environmental variables
   pool = mysql.createPool({
-    host     : '83.15.215.203',
-    port     : '3306',
-    user     : 'root',
-    password : 'pHT2yU6B_-NB',
-    database : 'test'
+    host     : 'env host',
+    port     : 'env port',
+    user     : 'env db user',
+    password : 'env db user pass',
+    database : 'env db name'
   });
 }
 exports.get = function() {
   return pool;
 }
 
-//TWORZY USERÓW
+// Creating users
  /* db.get().query('\
   CREATE TABLE `news` ( \
      `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, \
