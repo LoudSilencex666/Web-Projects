@@ -1,2 +1,2 @@
 # Web-Projects
-My web projects
+My silly, nostalgic, old projects, this is how I started with web-dev :D
